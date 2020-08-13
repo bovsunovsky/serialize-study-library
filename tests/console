@@ -1,0 +1,24 @@
+#!/usr/bin/env php
+<?php
+
+require_once __DIR__ . '/../vendor/autoload.php';
+
+require_once __DIR__.'/../src/Serializer.php';
+
+$testArray = ['qwe'=>123, 'rty'=>456, 'yui'=>'hjk'];
+
+$object = new \stdClass();
+$object->foo = 'bar';
+$object->xxx = 'ZZZ';
+
+$seralizer = new Serializer();
+
+file_put_contents(__DIR__. "/log.txt", "\n curent Time : ".date('Y-m-d H:i:s') .PHP_EOL, FILE_APPEND);
+file_put_contents(__DIR__. "/log.txt", "\n testArray in JSON format".$seralizer->serialize($testArray,'json'), FILE_APPEND);
+file_put_contents(__DIR__. "/log.txt", "\n testArray in YAML format".$seralizer->serialize($testArray,'yaml'), FILE_APPEND);
+file_put_contents(__DIR__. "/log.txt", "\n testArray in XML format".$seralizer->serialize($testArray,'xml'), FILE_APPEND);
+file_put_contents(__DIR__. "/log.txt", "\n testObject in JSON format".$seralizer->serialize($object,'json'), FILE_APPEND);
+file_put_contents(__DIR__. "/log.txt", "\n testObject in YAML format".$seralizer->serialize($object,'yaml'), FILE_APPEND);
+file_put_contents(__DIR__. "/log.txt", "\n testObject in XML format".$seralizer->serialize($object,'xml'), FILE_APPEND);
+
+echo($seralizer->serialize($object,'yaml'));
