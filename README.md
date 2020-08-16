@@ -19,7 +19,9 @@ Usage
 1)  Add: use BOA\Serializer;
 2)  Set returned format by method setReturnedFormat(),
 3)  Call method serialize($data);
+
 Example:
+
 $seralizer = new Serializer();
 $seralizer->setReturnedFormat('xml');
 echo $seralizer->serialize($data);
