@@ -1,0 +1,16 @@
+#!/usr/bin/env php
+<?php
+require_once __DIR__ . '/../vendor/autoload.php';
+
+use BOA\Serializer;
+use BOA\Test\TestObject;
+
+$testArray = ['qwe'=>123, 'rty'=>456, 'yui'=>'hjk'];
+
+$testObject = new TestObject();
+
+$seralizer = new Serializer();
+$seralizer->setReturnedFormat('xml');
+
+echo $seralizer->serialize($testObject);
+

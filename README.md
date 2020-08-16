@@ -4,11 +4,27 @@ This is a study serialize project.
 
 Installation
 ------------
-composer create-project bovsunovsky/serialize-study-library
+Either run
+composer require bovsunovsky/serialize-study-library
+
+or add
+
+"bovsunovsky/serialize-study-library": "~2.0"
+to the require section of your composer.json.
+
+Usage
+----- 
+1)  Add: use BOA\Serializer;
+2)  Set returned format by method setReturnedFormat(),
+3)  Call method serialize($data);
+Example:
+$seralizer = new Serializer();
+$seralizer->setReturnedFormat('xml');
+echo $seralizer->serialize($data);
 
 Tests
 -----
-Run with console : ./tests/console
+Run with console :" ./tests/serializeTest" or "php tests/serializeTest"
 
 License
 -------

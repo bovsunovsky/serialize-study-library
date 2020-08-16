@@ -1,7 +1,7 @@
 {
   "name": "bovsunovsky/serialize-study-library",
   "description": "This is a serializeStudyLibrary project.",
-  "keywords": ["project", "template", "structure", "skeleton", "phpunit"],
+  "keywords": ["library"],
   "type": "project",
   "license": "BSD-3-Clause",
   "authors": [
@@ -15,7 +15,8 @@
   "require": {
     "php": ">=7.4",
     "spatie/array-to-xml": "^2.12",
-    "symfony/yaml": "^5.1"
+    "symfony/yaml": "^5.1",
+    "ext-json": "*"
   },
   "require-dev": {
     "phpunit/phpunit": "^9.0",
@@ -23,12 +24,12 @@
   },
   "autoload": {
     "psr-4": {
-      "App\\": "src/"
+      "BOA\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "App\\Test\\": "tests/"
+      "BOA\\Test\\": "tests/"
     }
   },
   "scripts": {
