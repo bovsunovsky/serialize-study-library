@@ -5,11 +5,13 @@ This is a study serialize project.
 Installation
 ------------
 Either run
+
 composer require bovsunovsky/serialize-study-library
 
 or add
 
 "bovsunovsky/serialize-study-library": "~2.0"
+
 to the require section of your composer.json.
 
 Usage
