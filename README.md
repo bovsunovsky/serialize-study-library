@@ -1,6 +1,6 @@
 This is a study project based on  Default Project
 ===============
-This is a study serialize project.
+This is a study serialize library.
 
 Installation
 ------------

@@ -2,7 +2,7 @@
   "name": "bovsunovsky/serialize-study-library",
   "description": "This is a serializeStudyLibrary project.",
   "keywords": ["library"],
-  "type": "project",
+  "type": "library",
   "license": "BSD-3-Clause",
   "authors": [
     {
